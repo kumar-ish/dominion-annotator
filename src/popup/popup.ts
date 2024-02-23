@@ -2,8 +2,8 @@ import "./popup.scss";
 
 // Add listeners for click
 const buttons = document.querySelectorAll("input");
-
 buttons.forEach((x) => x.addEventListener("click", trigger));
+
 // Add listener for clear button
 document.querySelector("button")?.addEventListener("click", clearCheckboxes);
 

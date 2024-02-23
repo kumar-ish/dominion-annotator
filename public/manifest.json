@@ -1,14 +1,11 @@
 {
-  "name": "Chrome Extension...",
-  "description": "This extension is created for...",
-  "version": "1.0",
+  "name": "Dominion Annotator",
+  "description": "Annotate Dominion cards with desired properties!",
+  "version": "0.0.0.1",
   "manifest_version": 3,
   "action": {
     "default_popup": "popup.html",
     "default_icon": {
-      "16": "/images/icon_16.png",
-      "32": "/images/icon_32.png",
-      "48": "/images/icon_48.png",
       "128": "/images/icon_128.png"
     }
   },
@@ -20,9 +17,6 @@
     }
   ],
   "icons": {
-    "16": "/images/icon_16.png",
-    "32": "/images/icon_32.png",
-    "48": "/images/icon_48.png",
     "128": "/images/icon_128.png"
   }
 }
