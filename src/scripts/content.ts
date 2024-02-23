@@ -37,7 +37,7 @@ chrome.runtime.onMessage.addListener(function (
       ? cardByUrl.get(url)
       : cards.cards.find((card) => {
           const name =
-            card.set.toLowerCase() +
+            card.set.replace(" ", "-").toLowerCase() +
             "/" +
             card.name.replace(" ", "-").replace("'", "").toLowerCase();
           return url.includes(name);
@@ -54,7 +54,6 @@ chrome.runtime.onMessage.addListener(function (
       const k = _k as CardProperties;
 
       if (config[k] && card[k]) {
-        console.log("hahahahaha", config, card, k);
         e.style.opacity = "50%";
         return;
       }
